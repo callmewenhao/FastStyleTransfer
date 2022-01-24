@@ -2,7 +2,7 @@
 epoch_1/
 outputs/
 __pycache__/
-outputs/*0.png
+outputs/
 styles/!rain_princess.jpg
 fst.pth
 

@@ -2,7 +2,7 @@
 
 #### Transfer Result
 
-<img src="G:\DeepLearningProject\StyleTransfer-PyTorch\pred.png" style="zoom:70%;" />
+<img src="pred.png" style="zoom:70%;" />
 
 Not Good! 🤔
 

@@ -5,7 +5,7 @@
 <img src="pred_rain_princess.png" style="zoom:70%;" />
 <img src="pred_wave.png" style="zoom:70%;" />
 
-May be not good 🤔
+Just OK 🤔
 
 #### Reference
 

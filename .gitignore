@@ -1,10 +1,9 @@
 .idea/
 epoch_1/
+epoch_2/
 outputs/
 __pycache__/
-outputs/
-styles/!rain_princess.jpg
-fst.pth
+saved_weights/
 
 
 

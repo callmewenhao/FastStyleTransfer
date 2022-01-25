@@ -2,9 +2,10 @@
 
 #### Transfer Result
 
-<img src="pred.png" style="zoom:70%;" />
+<img src="pred_rain_princess.png" style="zoom:70%;" />
+<img src="pred_wave.png" style="zoom:70%;" />
 
-Not Good! 🤔
+May be not good 🤔
 
 #### Reference
 

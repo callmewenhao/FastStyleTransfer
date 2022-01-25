@@ -6,9 +6,9 @@ from torchvision.utils import save_image
 
 # path
 content_path = "content/chicago.jpg"
-style_path = "styles/rain_princess.jpg"
-save_dir = "outputs\\"
-weight_path = "fst.pth"
+style_path = "styles/wave.jpg"
+save_dir = ""
+weight_path = "saved_weights/fst_wave.pth"
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # transform
@@ -30,6 +30,6 @@ model.load_state_dict(torch.load(weight_path))
 model.eval()
 with torch.no_grad():
     out = model(c_data)
-save_image([s_data, c_data[0], out[0]], save_dir+f"pred0.png")
+save_image([s_data, c_data[0], out[0]], save_dir+f"pred_wave.png")
 
 

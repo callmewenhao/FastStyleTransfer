@@ -12,14 +12,14 @@ from utils import load_image
 
 
 # path & Hyper parameters
-batch_size = 8
+batch_size = 4
 learning_rate = 1e-4
 style_weight = 1e-7
 content_weight = 1
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 content_image_dir = "F:\GithubRepository\图像分割数据集\VOCtrainval_11-May-2012\VOCdevkit\VOC2012\JPEGImages"
-style_image_path = "styles/rain_princess.jpg"
-save_path = "outputs\\"
+style_image_path = "styles/wave.jpg"
+image_save_path = "outputs\\"
 
 # 数据集
 # content
@@ -62,10 +62,10 @@ while True:
         loss.backward()
         opt.step()
 
-        print(f"iter:{idx}, loss:{loss.item()}, s_loss:{s_loss.item()}, c_loss:{c_loss.item()}")
         if idx % 100 == 0:
-            torch.save(transfer_net.state_dict(), 'fst.pth')
-            save_image([content_image[0], combination[0]], save_path+f"iter_{idx}.png")
+            print(f"iter:{idx}, loss:{loss.item()}, s_loss:{s_loss.item()}, c_loss:{c_loss.item()}")
+            torch.save(transfer_net.state_dict(), 'saved_weights/fst_wave.pth')
+            save_image([content_image[0], combination[0]], image_save_path+f"iter_{idx}.png")
 
 
 
